@@ -1,0 +1,222 @@
+/* Universal Styling Starts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Reef;
+    src: url('../font/Reef.otf');
+}
+
+body {
+    color: #1e272e;
+    font-family: 'Reef', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+/* Universal Styling Ends */
+
+/* Header Styling Starts */
+header {
+    width: 100%;
+    background-color: #1e272e;
+    box-shadow: 0px 5px 7.5px #777777;
+}
+
+.heading-div {
+    max-width: 1400px;
+    display: flex;
+    margin: 0px auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.heading-div h1 {
+    color: #ffa801;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.nav-menu li {
+    padding: 5px 30px;
+    font-size: 20px;
+    border-right: 1.5px solid #ffa801;
+}
+
+.nav-menu li:last-child {
+    border: none;
+}
+
+.nav-menu li a {
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-menu li a:hover {
+    color: ;
+}
+/* Header Styling Ends */
+
+/* Header Image Styling Starts */
+.header-image {
+    max-width: 1400px;
+    margin: 25px auto;
+}
+
+.header-image img {
+    width: 100%;
+}
+/* Header Image Styling Ends */
+
+/* Artist Text Styling Starts */
+.artists-text {
+    display: flex;
+    max-width: 1400px;
+    margin: 50px auto;
+    padding-bottom: 35px;
+    justify-content: space-between;
+    border-bottom: 1.5px solid #777777;
+}
+
+.artist {
+    margin-right: 50px;
+}
+
+.artist:last-child {
+    margin: 0;
+}
+
+.artist a {
+    font-size: 15px;
+    color: #ffa801;
+    transition: all 0.5s ease-in-out;
+}
+
+.artist a:hover {
+    color: #1e272e;
+}
+
+.artist p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.artist-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.artist-name h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.shape {
+    width: 16px;
+    height: 32px;
+    position: relative;
+    background-color: #ffa801;
+    margin-right: 30px;
+}
+
+.shape::before {
+    content: '';
+    position: absolute;
+    right: -16px;
+    border: 0;
+    width: 0;
+    height: 0;
+    border-left: 16px solid #ffa801;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+}
+
+/* Artist Text Styling Ends */
+
+/* Artist Work Styling Starts */
+.artist-work {
+    max-width: 1400px;
+    margin: 0px auto;
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+.artist-work a {
+    font-size: 20px;
+    padding-right: 35px;
+    color: #ffa801;
+    transition: 0.5s ease-in-out;
+}
+
+.artist-work a:hover {
+    color: #1e272e;
+}
+
+.work-pictures {
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.work-pictures img {
+    filter: grayscale(100);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    border: 5px solid transparent;
+}
+
+.work-pictures img:hover {
+    filter: grayscale(0);
+    border: 5px solid #ffa801;
+    transform: scale(1.15);
+}
+/* Artist Work Styling Ends */
+
+/* Back to Top Styling Starts */
+.top {
+    position: fixed;
+    right: 1%;
+    bottom: 10%;
+    display: block;
+    background-color: #ffa801;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    text-shadow: 2.5px 2.5px 1px #777777;
+    transition: 0.5s ease-in-out;
+}
+
+.top:hover {
+    background-color: #1e272e;
+    border-radius: 50%;
+}
+/* Back to Top Styling Ends */
+
+/* Footer Styling Starts */
+footer {
+    background-color: #1e272e;
+    color: #ffffff;
+}
+
+footer div {
+    margin: auto;
+    max-width: 1400px;
+}
+
+footer p {
+    padding: 20px;
+    font-size: 20px;
+}
+/* Footer Styling Ends */
